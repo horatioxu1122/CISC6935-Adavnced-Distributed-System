@@ -20,9 +20,9 @@ def send_command_to_leader(command, nodes):
 if __name__ == "__main__":
     # Load cluster nodes from configuration
     nodes = [
-        ("127.0.0.1", 5000),
-        ("127.0.0.1", 5001),
-        ("127.0.0.1", 5002)
+        ("10.128.0.10", 5000),
+        ("10.128.0.11", 5001),
+        ("10.128.0.13", 5002)
     ]
 
     print("Interactive client. Type commands (SET, GET, DELETE, TIMEOUT, EXIT):")
