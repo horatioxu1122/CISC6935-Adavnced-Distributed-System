@@ -140,13 +140,13 @@ if __name__ == "__main__":
         # Define peers for each node including replicas (specific for nodes with replicas)
         if node_name == "node2":
             peers = [
-                ("127.0.0.1", 5003),  # Replica 1 for Account A
-                ("127.0.0.1", 5004)   # Replica 2 for Account A
+                ("10.128.0.11", 5003),  # Replica 1 for Account A
+                ("10.128.0.11", 5004)   # Replica 2 for Account A
             ]
         elif node_name == "node3":
             peers = [
-                ("127.0.0.1", 5005),  # Replica 1 for Account B
-                ("127.0.0.1", 5006)   # Replica 2 for Account B
+                ("10.128.0.13", 5005),  # Replica 1 for Account B
+                ("10.128.0.13", 5006)   # Replica 2 for Account B
             ]
         else:
             # For other nodes (node1 or replicas), determine peers differently
